@@ -1,0 +1,7 @@
+services:
+  yt-dlp-ubuntu:
+    image: emil144/yt-dlp
+    build: .
+    volumes:
+      - ./mydir:/mydir
+    container_name: yt-dlp
