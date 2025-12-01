@@ -1,0 +1,15 @@
+services:
+  back-end:
+    image: back-end
+    ports:
+      - 127.0.0.1:8080:8080
+    container_name: back-end
+    environment:
+    - REDIS_HOST=redis
+  front-end:
+    image: front-end
+    ports:
+      - 127.0.0.1:5000:5000
+    container_name: front-end
+  redis:
+    image: redis
